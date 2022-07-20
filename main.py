@@ -2,10 +2,9 @@ import os, winreg, random
 
 def generate():
     chars = '1234567890abcdef'
-    for i in range(1):
-        device_id = ''
-        for i in range(53):
-            device_id += random.choice(chars)
+    device_id = ''
+    for i in range(53):
+        device_id += random.choice(chars)
     return device_id
 
 def change(device_id):
